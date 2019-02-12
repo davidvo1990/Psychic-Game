@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <!-- AND/OR YOUR OWN CSS -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- this is where the game begin -->
+    <h1>Pychic game!!!</h1>
+    <p class="app">Let play guess game!!!</p>
+    <button class="button start" type="button" onclick="randomLetter()">Play!</button>
+    <button class="button reset" type="button" onclick="startNew()">Reset</button>
+    <p class="app" id="play"></p>
+    <p class="pre">Show your guess:</p>
+    <p class="pre">You had use these words:</p>
+    <p class="app" id="usedword"></p>
+    <p class="pre">Win:</p>
+    <p class="app" id="win">0</p>
+    <p class="pre">Loss:</p>
+    <p class="app" id="loss">0</p>
+    <p class="app" id="warning"></p>
+    <p class="pre">Life you have left:</p>
+    <p class="app" id="lives">10</p>
+
+
+  </div>
+  <!-- Link to your JavaScript -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
