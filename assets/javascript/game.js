@@ -19,6 +19,7 @@ function randomLetter() {
     live = 10;
     document.getElementById("usedword").innerHTML = "";
     document.getElementById("lives").innerHTML = 10;
+    leter= "";
     keypress();
 
 };
@@ -103,7 +104,12 @@ function liveLoss(live, lossN) {
 //function to do thing when key press
 function keypress() {
     document.onkeyup = function (event) {
-        letter = event.key;
+        for (var i = 0; i < alphabet.length; i++) {
+            if (event.key.toLowerCase() === alphabet[i].toLowerCase()) {
+                letter = event.key.toLowerCase();
+
+            }
+        }
         console.log(letter);
 
         //check if letter had been used?????????
